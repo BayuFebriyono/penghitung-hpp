@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Livewire\User\AddProduct;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -8,7 +9,6 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [AuthController::class, 'index']);
+Route::post('/login', [AuthController::class, 'login']);
 
-Route::get('/tes', function(){
-    return view('components.layouts.sidebar');
-});
+Route::get('/product', AddProduct::class);
