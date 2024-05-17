@@ -8,3 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [AuthController::class, 'index']);
+
+Route::get('/tes', function(){
+    return view('components.layouts.sidebar');
+});
