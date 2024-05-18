@@ -15,8 +15,12 @@
                 <i class="bi bi-cash-stack"></i>
                 <span>Hitung HPP</span>
             </a>
-
-
+        </li>
+        <li class="sidebar-item {{ $active == 'list-hpp' ? 'active' : '' }} ">
+            <a wire:navigate href="/list-hpp" class='sidebar-link'>
+                <i class="bi bi-card-checklist"></i>
+                <span>List HPP</span>
+            </a>
         </li>
 
         {{-- <li class="sidebar-item  has-sub">

@@ -12,4 +12,17 @@ class Product extends Model
 
     protected $guarded = ['id'];
     public $incrementing = false;
+
+    public function biaya_bahan()
+    {
+        return $this->hasMany(BiayaBahan::class);
+    }
+
+    public function biaya_tenaga_kerja(){
+        return $this->hasMany(BiayaTenagaKerja::class);
+    }
+
+    public function biaya_overload(){
+        return $this->hasMany(BiayaOverhead::class);
+    }
 }
