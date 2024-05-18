@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('biaya_overhead', function (Blueprint $table) {
-            $table->uuid('string')->primary();
+            $table->uuid('id')->primary();
             $table->foreignUuid('product_id');
             $table->string('komponen');
             $table->integer('harga_satuan');

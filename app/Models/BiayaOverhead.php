@@ -11,6 +11,6 @@ class BiayaOverhead extends Model
     use HasFactory, HasUuids;
 
     protected $table = 'biaya_overhead';
-    protected $guarded = [];
+    protected $guarded = ['id'];
     public $incrementing = false;
 }
