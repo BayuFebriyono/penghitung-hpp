@@ -14,4 +14,5 @@ class User extends Authenticatable
     use HasFactory, Notifiable, HasUuids;
 
     protected $guarded = ['id'];
+    public $incrementing = false;
 }
