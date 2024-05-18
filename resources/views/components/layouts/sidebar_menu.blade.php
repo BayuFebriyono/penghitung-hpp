@@ -3,9 +3,17 @@
         <li class="sidebar-title">Menu</li>
 
         <li class="sidebar-item {{ $active == 'product' ? 'active' : '' }} ">
-            <a href="index.html" class='sidebar-link'>
+            <a wire:navigate href="/product" class='sidebar-link'>
                 <i class="bi bi-grid-fill"></i>
                 <span>Product</span>
+            </a>
+
+
+        </li>
+        <li class="sidebar-item {{ $active == 'hitung-hpp' ? 'active' : '' }} ">
+            <a wire:navigate href="/hitung-hpp" class='sidebar-link'>
+                <i class="bi bi-cash-stack"></i>
+                <span>Hitung HPP</span>
             </a>
 
 
