@@ -21,5 +21,9 @@
         <div class="col-md-6">
             <livewire:user.hpp.biaya-bahan :productId="$productId"/>
         </div>
+
+        <div class="col-md-6">
+            <livewire:user.hpp.biaya-tenaga-kerja :productId="$productId"/>
+        </div>
     </div>
 </div>
