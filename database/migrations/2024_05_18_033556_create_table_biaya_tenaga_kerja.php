@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('biaya_tenaga_kerja', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->foreign('product_id');
+            $table->foreignUuid('product_id');
             $table->string('tenaga_kerja');
             $table->integer('harga_satuan');
             $table->timestamps();
