@@ -15,4 +15,10 @@
             </select>
         </div>
     </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <livewire:user.hpp.biaya-bahan />
+        </div>
+    </div>
 </div>
